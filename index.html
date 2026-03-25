@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gerador de Hash SHA-256</title>
+</head>
+<body>
+<div class="login-box">
+        <h1>Gerador de Hash</h1>
+        <p style="color: #666; margin-bottom: 20px;">Cria códigos SHA-256 para o teu sistema</p>
+        
+        <input type="password" id="input-senha" placeholder="Escreve a tua nova senha..." autocomplete="off" autofocus>
+        
+        <button type="button" onclick="gerarNovoHash()" id="btn-gerar">Gerar Código Seguro</button>
+
+        <div id="resultado-container">
+            <p style="font-size: 0.8rem; color: #d92323; font-weight: bold; margin-bottom: 5px;">Copia este código:</p>
+            <div class="hash-wrapper">
+                <code id="hash-result"></code>
+                <button onclick="copiarHash()" id="btn-copiar">Copiar</button>
+            </div>
+            <p id="feedback" style="font-size: 0.75rem; color: green; margin-top: 5px; display: none;">✔ Copiado com sucesso!</p>
+        </div>
+    </div>
+     <!-- Menu de Contactos Flutuante -->
+    <div class="contato-wrapper">
+      <div class="menu-social">
+        <a
+          href="https://wa.me"
+          target="_blank"
+          class="social-btn whatsapp"
+          title="WhatsApp"
+          rel="noopener"
+        >
+          <img src="image/whatsapp-logo.png" alt="WhatsApp" />
+        </a>
+        <a
+          href="mailto:teuemail@exemplo.com"
+          class="social-btn email"
+          title="E-mail"
+          rel="noopener"
+        >
+          <img src="image/mail.png" alt="Email" />
+        </a>
+        <a
+          href="https://github.com/CristianoFranca1976/"
+          target="_blank"
+          class="social-btn github"
+          title="GitHub"
+          rel="noopener"
+        >
+          <img src="image/social.png" alt="GitHub" />
+        </a>
+        <a
+          href="https://donates.vercel.app/"
+          target="_blank"
+          class="social-btn doacao"
+          title="Apoiar Projeto"
+          rel="noopener"
+        >
+          <img src="image/donate.png" alt="Doação" />
+        </a>
+        <button type="button" class="main-fab">
+          <span>+</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Rodapé Fixo -->
+    <footer class="footer-sticky">
+      <p>
+        &copy; 2024 - Todos os direitos reservados | Desenvolvido com
+        <a
+          href="https://copyright-ru.vercel.app/"
+          target="_blank"
+          title="copyright"
+          rel="noopener"
+          >❤️</a
+        >
+      </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
